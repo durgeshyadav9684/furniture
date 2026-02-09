@@ -19,7 +19,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 flex items-center justify-center md:justify-end px-6 md:px-16">
           
           {/* Card Box */}
-          <div className="bg-[#d9e9f6] w-full max-w-[450px] rounded-xl p-8 md:p-10 shadow-lg">
+          <div className="bg-[#f1efec] w-full max-w-[450px] rounded-xl p-8 md:p-10 shadow-lg">
             
             {/* Small Heading */}
             <p className="text-sm uppercase tracking-widest text-gray-600">
@@ -27,7 +27,7 @@ export default function HeroSection() {
             </p>
 
             {/* Main Heading */}
-            <h1 className="text-3xl md:text-4xl font-bold text-[#003b5c] mt-3 leading-snug">
+            <h1 className="text-3xl md:text-4xl font-bold text-secondary mt-3 leading-snug">
               Discover Our <br /> New Collection
             </h1>
 
@@ -38,7 +38,7 @@ export default function HeroSection() {
             </p>
 
             {/* Button */}
-            <button className="mt-6 px-6 py-3 rounded-full bg-[#003b5c] text-white font-medium hover:bg-[#002a42] transition">
+            <button className="mt-6 px-6 py-3 rounded-full bg-primary text-white font-medium hover:bg-secondary transition">
               BUY NOW
             </button>
           </div>

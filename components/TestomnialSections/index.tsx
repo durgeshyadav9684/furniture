@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
         {testimonials.map((client, index) => (
           <div
             key={index}
-            className="bg-white hover:bg-[#FFD8DF] rounded-2xl shadow-md p-8 hover:shadow-lg transition"
+            className="group bg-white hover:bg-secondary rounded-2xl shadow-md p-8 hover:shadow-lg transition-all duration-300"
           >
             {/* Stars */}
             <div className="flex gap-1 text-yellow-500">
@@ -49,12 +49,12 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Message */}
-            <p className="mt-5 text-gray-700 text-sm leading-relaxed">
+            <p className="mt-5 text-gray-700 group-hover:text-white text-sm leading-relaxed transition">
               “{client.message}”
             </p>
 
             {/* Divider */}
-            <hr className="my-6 border-gray-300" />
+            <hr className="my-6 border-gray-300 group-hover:border-white/40 transition" />
 
             {/* Client Info */}
             <div className="flex items-center gap-4">
@@ -67,8 +67,12 @@ export default function TestimonialsSection() {
 
               {/* Name + Role */}
               <div>
-                <h3 className="font-bold text-gray-900">{client.name}</h3>
-                <p className="text-sm text-gray-500">{client.role}</p>
+                <h3 className="font-bold text-gray-900 group-hover:text-white transition">
+                  {client.name}
+                </h3>
+                <p className="text-sm text-gray-500 group-hover:text-white/80 transition">
+                  {client.role}
+                </p>
               </div>
             </div>
           </div>

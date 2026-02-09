@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-950 text-gray-300 pt-16">
+    <footer className="bg-primary border-secondary border-2 text-gray-300 pt-16">
       <div className="max-w-6xl mx-auto px-6 grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
         {/* Brand Info */}
         <div>
@@ -23,19 +23,19 @@ export default function Footer() {
           <div className="flex gap-4 mt-6">
             <a
               href="#"
-              className="p-2 rounded-full bg-gray-800 hover:bg-white hover:text-black transition"
+              className="p-2 rounded-full bg-secondary hover:bg-sky-700 hover:text-white text-black transition"
             >
               <Facebook size={18} />
             </a>
             <a
               href="#"
-              className="p-2 rounded-full bg-gray-800 hover:bg-white hover:text-black transition"
+              className="p-2 rounded-full bg-secondary hover:bg-sky-700 hover:text-white text-black transition"
             >
               <Instagram size={18} />
             </a>
             <a
               href="#"
-              className="p-2 rounded-full bg-gray-800 hover:bg-white hover:text-black transition"
+              className="p-2 rounded-full bg-secondary hover:bg-sky-700 hover:text-white text-black transition"
             >
               <Linkedin size={18} />
             </a>
@@ -126,7 +126,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800 mt-14 py-6 text-center text-sm text-gray-500">
+      <div className="border-t-2 border-secondary mt-14 py-6 text-center text-sm text-white  text-bold">
         © {new Date().getFullYear()} SVI DESIGN. All rights reserved.
       </div>
     </footer>
